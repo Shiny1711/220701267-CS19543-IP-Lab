@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Example</title>
+    <script>
+        function loadXMLDoc() {
+            // Create an XMLHttpRequest object
+            var xhttp = new XMLHttpRequest();
+            
+            // Use the open() method to specify the request
+            xhttp.open("GET", "rec.txt", true);
+            
+            // Define the onload callback to process the response
+            xhttp.onload = function() {
+                if (xhttp.status == 200) { // HTTP status code 200 means "OK"
+                    // Use responseText to get the response as a string
+                    document.getElementById("content").innerHTML = xhttp.responseText;
+                }
+            };
+            
+            // Send the request to the server
+            xhttp.send();
+        }
+    </script>
+</head>
+<body>
+    <!-- Create a div section and a button -->
+    <div id="content">
+        <!-- The retrieved text will be displayed here -->
+    </div>
+    <button type="button" onclick="loadXMLDoc()">Click here</button>
+</body>
+</html>
