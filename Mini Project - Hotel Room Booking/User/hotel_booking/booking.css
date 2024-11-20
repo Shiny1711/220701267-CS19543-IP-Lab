@@ -1,0 +1,64 @@
+/* General Styles */
+body {
+    background-color: #f8f9fa; /* Light background color */
+    font-family: 'Arial', sans-serif;
+    color: #343a40; /* Dark gray text */
+}
+
+/* Container for booking details */
+.container {
+    margin-top: 50px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading styles */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #007bff; /* Bootstrap primary color */
+    border-color: #007bff; 
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3; 
+}
+
+/* Details section styling */
+.details {
+    margin-top: 20px;
+    border-top: 2px solid #007bff; /* Divider line */
+    padding-top: 20px;
+}
+
+.details p {
+    font-size: 1.1rem; /* Slightly larger text */
+    margin-bottom: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+}

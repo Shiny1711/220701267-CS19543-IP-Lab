@@ -1,0 +1,250 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+h2 {
+    font-size: 2.8rem;
+    font-family: 'Poppins', sans-serif;
+    color: purple; /* A warm golden color matching the logo */
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+    line-height: 1.4;
+}
+
+
+h1,  h3, h4 {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: black;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: #f8f9fa !important;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #f8f9fa !important;
+    margin-right: 20px;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffcc00 !important;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #343a40;
+    border: none;
+}
+
+.navbar-nav .dropdown-item {
+    color: #f8f9fa;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: #ffcc00;
+    color: #343a40;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('hotel-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Hotel Description */
+.hotel-description {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 900px;
+}
+
+.hotel-description p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #666;
+}
+
+/* Registration & Login Forms */
+.form-container {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 400px;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #343a40;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Room Cards */
+.rooms-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 1200px;
+}
+
+.room-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 30%;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.room-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.room-card img {
+    width: 100%;
+    border-bottom: 5px solid #007bff;
+}
+
+.room-card-body {
+    padding: 20px;
+}
+
+.room-card-title {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.room-card-text {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .rooms-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .room-card {
+        width: 90%;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+        margin-right: 10px;
+    }
+}
+
+
+.home-intro {
+    color: #555; /* Softer text color for readability */
+    font-family: 'Poppins', sans-serif; /* Match site font */
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light background to make text stand out */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Gentle shadow to lift the section */
+    max-width: 800px;
+    margin: 30px auto; /* Center the paragraph */
+}
+
+.home-intro strong {
+    color: #007bff; /* Accent color for emphasized text */
+    font-weight: 600;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.home-intro strong:hover {
+    color: #ffcc00; /* Change color on hover for interactivity */
+}
+
