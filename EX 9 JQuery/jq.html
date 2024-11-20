@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f0f0f0;
+        }
+
+        .bubble {
+            position: absolute;
+            font-size: 24px;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #controlPanel {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+
+        #startBtn, #stopBtn {
+            padding: 10px 20px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        #startBtn {
+            background-color: green;
+        }
+
+        #stopBtn {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="controlPanel">
+        <button id="startBtn">Start Game</button>
+        <button id="stopBtn">Stop Game</button>
+        <span id="scoreDisplay">Score: 0</span>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
